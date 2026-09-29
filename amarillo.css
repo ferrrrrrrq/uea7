@@ -1,0 +1,66 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: white
+}
+
+
+/* HEADER STYLES */
+
+header {
+    padding: 25px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a,
+nav button {
+    color: rgb(71, 4, 255);
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+nav a:hover,
+nav button:hover {
+    opacity: 0.5;
+}
+
+/* OBRAS STYLES */
+
+#obra {}
+
+.obra img {
+    width:50%
+    margin:2%
+}
+.obra-contenido{
+    display:flex;
+    justify-content: 2%;
+}
+.numero-obra{
+    font-size: 35px;
+    font-weight: bold;
+}
+.encabezado-obra{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
