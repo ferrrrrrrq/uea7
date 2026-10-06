@@ -10,15 +10,18 @@ html {
 body {
     margin: 0 10%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #19c0b7;
-    color:aquamarine
+    background-color: #0f2f2e;
+    color: #e8fff8;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
 
 /* HEADER STYLES */
-
 header {
-    padding: 25px 40px;
+    padding: 25px 0;
 }
 
 nav {
@@ -29,7 +32,7 @@ nav {
 
 nav a,
 nav button {
-    color: rgb(28, 229, 5);
+    color: #7dffb0;
     font-family: inherit;
     font-size: 14px;
     cursor: pointer;
@@ -44,7 +47,62 @@ nav button:hover {
 }
 
 /* OBRAS STYLES */
+.obras {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 40px 0;
+}
 
-#obra {}
+.obra {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
 
-.obra1 {}
+.imagen-obra img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.descripcion-obra h2 {
+    margin: 0 0 16px;
+    font-size: 28px;
+}
+
+.descripcion-obra p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+.numero-obra {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #7dffb0;
+    margin-bottom: 8px !important;
+}
+
+/* ABOUT STYLES */
+.about {
+    padding: 60px 0;
+}
+
+/* FOOTER STYLES */
+footer {
+    padding: 30px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    body {
+        margin: 0 5%;
+    }
+
+    .obra {
+        grid-template-columns: 1fr;
+    }
+}
