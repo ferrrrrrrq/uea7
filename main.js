@@ -3,28 +3,32 @@ const obras = {
         obra1: {
             numero: 1,
             titulo: 'El Ultimo Turno',
+            imagen: 'vins.jpeg',
             descripcion: 'Es una instalación sonora multicanal que dialoga con la comida. A partir de grabaciones de campo de gente eructando después de comer su comida favorita de la infancia, se busca rememorar los moementos gratificantes vividos en la infancia de las personas, ejerciendo así, un espacio de expecionalidad de su entorno cotidiano. Esta instalación queda como registro de dicha experiencia.'
         },
         obra2: {
             numero: 2,
             titulo: 'Ecos del Sentir',
+            imagen: 'simi.jpeg',
             descripcion: 'Es una escultura 3D del doctor SIMI que en ralidad tiene en su interior un hispotal del IMSS. A partir de este elemnto 3D se busca tensionar la realidad de falta de servicio público de salud en México y cómo muchas personas usan empresas privada como similares para sus consultas médicas. La escultrua es navegabl y en su interior alberga escenas de violencia cotifdiana en hospitales públicos de México'
         },
         obra3: {
             numero: 3,
             titulo: 'Espacios',
+            imagen: 'pulpo.jpeg',
             descripcion: 'Espacios es un proyecto del 2do trimestre donde a través de imágenes fijas busco transportar al espectador al interior de distintos escenarios, acompañados de una musicalización sonora que complementa y da vida a cada ambiente. Cada imagen construye una habitación propia donde la vista y el sonido se fusionan para crear una experiencia inmersiva única.'
         }
     },
     statement: 'Me gusta trabajar en torno a experiencia humanas cotidianas, reflexionando sobre las frases que normalmente nos decimos para estrucuturar la convivencia del día a día. A partir de ahi genero ejercicios creativos que desarrollan los campos semánticos de dichas palabras. Más que explorar un absurdo abro espacios en un territorio constantemente pasado por alto, vinculado a las buenas costumbres.'
 }
+
+let statement = obras.statement
+
 let about = document.createElement('P')
 about.innerHTML = statement
 document.getElementsByClassName('about')[0].appendChild(about)
 
 console.log(document)
-console.log(obras.obras,obra1)
-console.log(obras['obras'['obras'['obra1']]])
 // console.log(obras.obras.obra1)
 // console.log(obras['obras']['obra1'])
 let listadoObras = Object.keys(obras.obras)
